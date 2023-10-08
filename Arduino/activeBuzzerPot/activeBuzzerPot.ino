@@ -3,6 +3,7 @@ int potPin = A3;
 int waitTime = 500;
 int waittime = 1000;
 int numEntered;
+int readVal;
 String message = "Input a number: ";
 
 void setup() {
@@ -24,10 +25,16 @@ void loop() {
     digitalWrite(buzzPin, LOW);
   }
   **/
-  digitalWrite(buzzPin, HIGH);
-  delay(waitTime);
-  digitalWrite(buzzPin, LOW);
-  delay(waitTime);
+  readVal = analogRead(potPin);
+  Serial.println(readVal);
+  delay(100);
+  if (readVal > 1000) {       //Buzzer Beep if ReadVal > 1000
+    digitalWrite(buzzPin, HIGH);
+    delay(waitTime);
+    digitalWrite(buzzPin, LOW);
+    delay(waitTime);
+  }
+
   /**
   tone(buzzPin, 1000);
   delay(waitTime);

@@ -14,14 +14,101 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(yellowPin_1, HIGH);
-  digitalWrite(yellowPin_2, HIGH);
-  digitalWrite(yellowPin_3, HIGH);
-  digitalWrite(yellowPin_4, HIGH);
-  delay(delayTime);
-  digitalWrite(yellowPin_1, LOW);
-  digitalWrite(yellowPin_2, LOW);
-  digitalWrite(yellowPin_3, LOW);
   digitalWrite(yellowPin_4, LOW);
+  digitalWrite(yellowPin_3, LOW);
+  digitalWrite(yellowPin_2, LOW);
+  digitalWrite(yellowPin_1, LOW);
   delay(delayTime);
+
+  digitalWrite(yellowPin_4, LOW);
+  digitalWrite(yellowPin_3, LOW);
+  digitalWrite(yellowPin_2, LOW);
+  digitalWrite(yellowPin_1, HIGH);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, LOW);
+  digitalWrite(yellowPin_3, LOW);
+  digitalWrite(yellowPin_2, HIGH);
+  digitalWrite(yellowPin_1, LOW);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, LOW);
+  digitalWrite(yellowPin_3, LOW);
+  digitalWrite(yellowPin_2, HIGH);
+  digitalWrite(yellowPin_1, HIGH);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, LOW);
+  digitalWrite(yellowPin_3, HIGH);
+  digitalWrite(yellowPin_2, LOW);
+  digitalWrite(yellowPin_1, LOW);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, LOW);
+  digitalWrite(yellowPin_3, HIGH);
+  digitalWrite(yellowPin_2, LOW);
+  digitalWrite(yellowPin_1, HIGH);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, LOW);
+  digitalWrite(yellowPin_3, HIGH);
+  digitalWrite(yellowPin_2, HIGH);
+  digitalWrite(yellowPin_1, LOW);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, LOW);
+  digitalWrite(yellowPin_3, HIGH);
+  digitalWrite(yellowPin_2, HIGH);
+  digitalWrite(yellowPin_1, HIGH);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, HIGH);
+  digitalWrite(yellowPin_3, LOW);
+  digitalWrite(yellowPin_2, LOW);
+  digitalWrite(yellowPin_1, LOW);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, HIGH);
+  digitalWrite(yellowPin_3, LOW);
+  digitalWrite(yellowPin_2, LOW);
+  digitalWrite(yellowPin_1, HIGH);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, HIGH);
+  digitalWrite(yellowPin_3, LOW);
+  digitalWrite(yellowPin_2, HIGH);
+  digitalWrite(yellowPin_1, LOW);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, HIGH);
+  digitalWrite(yellowPin_3, LOW);
+  digitalWrite(yellowPin_2, HIGH);
+  digitalWrite(yellowPin_1, HIGH);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, HIGH);
+  digitalWrite(yellowPin_3, HIGH);
+  digitalWrite(yellowPin_2, LOW);
+  digitalWrite(yellowPin_1, LOW);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, HIGH);
+  digitalWrite(yellowPin_3, HIGH);
+  digitalWrite(yellowPin_2, LOW);
+  digitalWrite(yellowPin_1, HIGH);
+  delay(delayTime);
+
+  digitalWrite(yellowPin_4, HIGH);
+  digitalWrite(yellowPin_3, HIGH);
+  digitalWrite(yellowPin_2, HIGH);
+  digitalWrite(yellowPin_1, LOW);
+  delay(delayTime);
+
+
+  digitalWrite(yellowPin_4, HIGH);
+  digitalWrite(yellowPin_3, HIGH);
+  digitalWrite(yellowPin_2, HIGH);
+  digitalWrite(yellowPin_1, HIGH);
+  delay(delayTime);
+  
 }

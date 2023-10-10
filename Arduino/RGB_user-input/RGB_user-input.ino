@@ -24,7 +24,7 @@ void loop() {
   while (Serial.available() == 0){
 
   }
-  delay(waitTime);
+  delay(1000);
   for (counter = 1; counter <= myNum; counter++)
   {
     digitalWrite(greenPin, LOW);
@@ -35,33 +35,26 @@ void loop() {
   */
   Serial.println(colorMessage);
   while (Serial.available() == 0) {
-
   }
   colorInput = Serial.readString();
-  delay(500);
-  if (colorInput == "red")
-  {
+  colorInput.trim();
+  colorInput.toLowerCase();
+  if (colorInput == "red") {
+    Serial.println("Red");
     digitalWrite(redPin, LOW);
     digitalWrite(greenPin, HIGH);
     digitalWrite(bluePin, HIGH);
   }
-  if (colorInput == "green")
-  {
+  if (colorInput == "green") {
+    Serial.println("Green");
     digitalWrite(redPin, HIGH);
     digitalWrite(greenPin, LOW);
     digitalWrite(bluePin, HIGH);
   }
-  if (colorInput == "blue")
-  {
+  if (colorInput == "blue") {
+    Serial.println("Blue");
     digitalWrite(redPin, HIGH);
     digitalWrite(greenPin, HIGH);
     digitalWrite(bluePin, LOW);
   }
-  /**
-  else 
-  {
-    digitalWrite(redPin, HIGH);
-    digitalWrite(greenPin, HIGH);
-    digitalWrite(bluePin, HIGH);
-  }*/
 }

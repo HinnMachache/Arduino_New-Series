@@ -1,3 +1,4 @@
+void potBuzzer(int);
 int buzzPin = 7;
 int potPin = A3;
 int waitTime = 500;
@@ -26,16 +27,30 @@ void loop() {
   }
   **/
   readVal = analogRead(potPin);
-  Serial.println(readVal);
-  delay(100);
-  if (readVal > 1000) {       //Buzzer Beep if ReadVal > 1000
-    digitalWrite(buzzPin, HIGH);
-    delay(waitTime);
-    digitalWrite(buzzPin, LOW);
-    delay(waitTime);
-  }
+  potBuzzer(readVal);
+  //Serial.println(readVal);
+  //delay(100);
+  potBuzzer(readVal);
+  // Serial.println(readVal);
+  // delay(100);
+  // if (readVal > 1000) {       //Buzzer Beep if ReadVal > 1000
+  //   digitalWrite(buzzPin, HIGH);
+  //   delay(waitTime);
+  //   digitalWrite(buzzPin, LOW);
+  //   delay(waitTime);
+}
 
-  /**
+void potBuzzer(int potValue) {
+  int delayTime;
+  delayTime = (-9940. / 1023. * potValue) + 10000;
+  //Serial.println(delayTime);
+  digitalWrite(buzzPin, HIGH);
+  delayMicroseconds(delayTime);
+  digitalWrite(buzzPin, LOW);
+  delayMicroseconds(delayTime);
+}
+
+/**
   tone(buzzPin, 1000);
   delay(waitTime);
   tone(buzzPin, 2000);
@@ -46,4 +61,3 @@ void loop() {
   delay(500);
     
 **/
-}

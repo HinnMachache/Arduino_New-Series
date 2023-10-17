@@ -18,7 +18,7 @@ void loop() {
 
 
 void ledFunc(int ledState) {
-  if (ledState == 0) {
+  if (ledState == 1) {
     digitalWrite(ledPin, HIGH);
   } else {
     digitalWrite(ledPin, LOW);

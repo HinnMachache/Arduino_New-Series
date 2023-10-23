@@ -48,12 +48,8 @@ void loop() {
         ledState += 1;
         break;
       case 4:
-        while (counter < 2) {
-          rgbLed();
-          counter += 1;
-          ledState += 1;        
-        }
-        
+        rgbLed();
+        ledState += 1;
         break;
       default:
         digitalWrite(redLed, HIGH);

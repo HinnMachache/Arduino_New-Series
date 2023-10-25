@@ -13,7 +13,7 @@ void setup() {
   myStepper.setSpeed(motSpeed);
   pinMode(buttonPin, INPUT);
   pinMode(buttonPin, HIGH);
-}
+} 
 
 void loop() {
   //stepperMotor();
